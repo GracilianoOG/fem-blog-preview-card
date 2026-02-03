@@ -45,4 +45,17 @@
   &__content > :nth-child(n):not(:last-child) {
     margin-bottom: 0.75rem;
   }
+
+  &__author {
+    &::before {
+      @avatar-size: 2rem;
+      background-image: url("../../assets/images/image-avatar.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      display: inline-block;
+      height: @avatar-size;
+      width: @avatar-size;
+    }
+  }
 }
