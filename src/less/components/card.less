@@ -32,7 +32,7 @@
   }
 
   &__date {
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 3vw, 0.875rem);
   }
 
   &__title {
@@ -73,12 +73,6 @@
       display: inline-block;
       height: @avatar-size;
       width: @avatar-size;
-    }
-  }
-
-  @media screen and (min-width: 48rem) {
-    &__date {
-      font-size: 0.875rem;
     }
   }
 }
