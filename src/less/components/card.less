@@ -51,7 +51,7 @@
 
   &__description {
     color: #colors[gray-500];
-    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 3.6vw, 1rem);
   }
 
   &__content > :nth-child(n):not(:last-child) {
@@ -83,10 +83,6 @@
 
     &__date {
       font-size: 0.875rem;
-    }
-
-    &__description {
-      font-size: 1rem;
     }
   }
 }
